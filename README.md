@@ -21,6 +21,7 @@ I actively engage in the tech community and am a recognized figure in various te
 [![Python](https://img.shields.io/badge/Python-%233776AB.svg?logo=Python&logoColor=white)](https://www.python.org/)
 [![ArgoCD](https://img.shields.io/badge/ArgoCD-%230078D4.svg?logo=ArgoCD&logoColor=white)](https://argo-cd.readthedocs.io/en/stable/)
 [![Linux](https://img.shields.io/badge/Linux-%230078D4.svg?logo=Linux&logoColor=white)](https://www.linux.com/)
+[![Datadog](https://img.shields.io/badge/DATADOG-632CA6?style=for-the-badge&logo=datadog&logoColor=white)](https://www.datadoghq.com/)
 </div>
 
 <div align="left">
@@ -40,6 +41,7 @@ I actively engage in the tech community and am a recognized figure in various te
 <div align="left">
   <a href="https://grafana.com/"><img src="https://img.shields.io/badge/Grafana-%23FF5733.svg" alt="Grafana"></a>
   <a href="https://www.elastic.co/kibana"><img src="https://img.shields.io/badge/Kibana-%236633FF.svg" alt="Kibana"></a>
+  <a href="https://www.datadoghq.com"><img src="https://img.shields.io/badge/DATADOG-632CA6?style=for-the-badge&logo=datadog&logoColor=white" alt="Datadog"></a>
 </div>
 
 ## 🤝🏻 Stay Connected: Connect with Me and Our Community
