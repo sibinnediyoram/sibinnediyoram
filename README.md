@@ -44,7 +44,7 @@ I actively engage in the tech community and am a recognized figure in various te
   <a href="https://www.datadoghq.com"><img src="https://img.shields.io/badge/DATADOG-632CA6?style=for-the-badge&logo=datadog&logoColor=white" alt="Datadog"></a>
 </div>
 
-## 🤝🏻 Stay Connected: Connect with Me and Our Community
+## 🤝🏻 Stay Connected
 ## 🌐 Socials Platforms:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sibinnediyoram)
