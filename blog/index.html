@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Sibin John</title>
+  <meta name="description" content="Technical articles on SRE, Kubernetes, AWS, GCP and platform engineering by Sibin John." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0d1117;
+      --surface: #161b22;
+      --border:  #21262d;
+      --text:    #e6edf3;
+      --muted:   #8b949e;
+      --accent:  #f0a500;
+      --green:   #3fb950;
+      --radius:  8px;
+      --max-w:   820px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.7; font-size: 16px;
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,17,23,.93);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px; color: var(--accent); text-decoration: none;
+    }
+    .nav-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--muted); text-decoration: none;
+      font-size: 14px; font-weight: 500; transition: color .2s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* ── MAIN ── */
+    main { flex: 1; padding: 64px 24px 80px; }
+    .container { max-width: var(--max-w); margin: 0 auto; }
+
+    .page-tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px;
+      color: var(--green); background: rgba(63,185,80,.1);
+      border: 1px solid rgba(63,185,80,.25); border-radius: 4px;
+      padding: 3px 10px; margin-bottom: 18px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.3px; }
+    h1 span { color: var(--accent); }
+    .page-desc {
+      margin-top: 10px; color: var(--muted); font-size: 15px;
+      max-width: 540px;
+    }
+    .medium-link {
+      display: inline-flex; align-items: center; gap: 7px;
+      margin-top: 20px; color: var(--accent); font-size: 14px;
+      font-weight: 600; text-decoration: none; transition: opacity .2s;
+    }
+    .medium-link:hover { opacity: .75; }
+
+    /* ── POSTS LIST ── */
+    .posts { margin-top: 48px; display: flex; flex-direction: column; gap: 1px; }
+
+    .post-item {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none; color: inherit;
+      transition: background .15s;
+    }
+    .post-item:first-child { border-top: 1px solid var(--border); }
+    .post-item:hover .post-title { color: var(--accent); }
+
+    .post-body { flex: 1; }
+    .post-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 6px;
+    }
+    .post-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; color: var(--muted);
+    }
+    .post-pub {
+      font-size: 11px; padding: 2px 7px;
+      border-radius: 3px; border: 1px solid var(--border);
+      color: var(--muted); background: var(--surface);
+    }
+    .post-title {
+      font-size: 15px; font-weight: 600; line-height: 1.45;
+      transition: color .2s;
+    }
+
+    .post-arrow {
+      flex-shrink: 0;
+      color: var(--muted); font-size: 18px;
+      transition: color .2s, transform .2s;
+      margin-top: 2px;
+    }
+    .post-item:hover .post-arrow { color: var(--accent); transform: translateX(3px); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center; padding: 28px 24px;
+      color: var(--muted); font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 540px) {
+      .post-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../">sibin.john</a>
+    <a class="nav-back" href="../">
+      ← Back to Portfolio
+    </a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="page-tag">Technical Writing</div>
+    <h1>My <span>Blog</span></h1>
+    <p class="page-desc">
+      In-depth articles on SRE, Kubernetes, AWS, GCP, and platform engineering.
+      All posts are published on Medium.
+    </p>
+    <a class="medium-link" href="https://medium.com/@sibinnediyoram" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+      Follow on Medium for new posts
+    </a>
+
+    <div class="posts">
+
+      <a class="post-item" href="https://medium.com/@sibinnediyoram/zero-touch-ecr-automating-centralized-image-helm-and-cache-management-with-terraform-8f0e4c5decf7" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Apr 2025</span>
+          </div>
+          <div class="post-title">Zero-Touch ECR: Automating Centralized Image, Helm &amp; Cache Management with Terraform</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/@sibinnediyoram/from-oltp-to-data-lake-zero-downtime-cdc-from-rds-postgres-to-s3-with-parquet-format-17c7cd5fded5" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Mar 2025</span>
+          </div>
+          <div class="post-title">From OLTP to Data Lake: Zero-Downtime CDC from RDS Postgres to S3 with Parquet Format</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/@sibinnediyoram/building-a-secure-multi-account-secrets-backup-system-on-aws-0bccc4479c7e" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Mar 2025</span>
+          </div>
+          <div class="post-title">Building a Secure Multi-Account Secrets Backup System on AWS</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/@sibinnediyoram/eks-terraform-module-upgrade-from-17-0-x-to-21-0-x-5b265b1d9fd8" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Mar 2025</span>
+          </div>
+          <div class="post-title">EKS Terraform Module Upgrade from 17.0.x to 21.0.x</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/@sibinnediyoram/aws-ami-update-al2-to-al2023-aaf7412f88ee" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Mar 2025</span>
+          </div>
+          <div class="post-title">AWS AMI Update: AL2 to AL2023 — Golden AMI with Packer &amp; Ansible</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/cloudnloud/run-keycloak-in-amazon-ecs-3487f3352563" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Jul 2023</span>
+            <span class="post-pub">CloudnLoud</span>
+          </div>
+          <div class="post-title">Run Keycloak in Amazon ECS</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/cloudnloud/how-host-grouping-helped-me-to-improve-speed-of-my-ansible-playbook-aaba515fc9ce" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">May 2023</span>
+            <span class="post-pub">CloudnLoud</span>
+          </div>
+          <div class="post-title">How Host Grouping Helped Me Improve the Speed of My Ansible Playbook</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/cloudnloud/run-sonarqube-in-kubernetes-using-helm-chart-635a8b2358b6" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Mar 2023</span>
+            <span class="post-pub">CloudnLoud</span>
+          </div>
+          <div class="post-title">Run Sonarqube in Kubernetes Using Helm Chart</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/cloudnloud/semantic-versioning-strategies-which-i-experienced-in-different-projects-c6a25924aec7" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Mar 2023</span>
+            <span class="post-pub">CloudnLoud</span>
+          </div>
+          <div class="post-title">Semantic Versioning Strategies Which I Experienced in Different Projects</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+      <a class="post-item" href="https://medium.com/cloudnloud/cis-benchmarking-and-kube-bench-9126913f3b1a" target="_blank" rel="noopener">
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-date">Feb 2023</span>
+            <span class="post-pub">CloudnLoud</span>
+          </div>
+          <div class="post-title">CIS Benchmarking and Kube-bench</div>
+        </div>
+        <div class="post-arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Sibin John &nbsp;·&nbsp; <a href="https://medium.com/@sibinnediyoram" target="_blank" rel="noopener">medium.com/@sibinnediyoram</a></p>
+</footer>
+
+</body>
+</html>
