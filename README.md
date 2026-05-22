@@ -9,6 +9,12 @@
 </p>
 
 <p align="center">
+  <a href="https://sibinnediyoram.github.io"><b>Portfolio & CV →</b></a> &nbsp;|&nbsp;
+  <a href="https://sibinnediyoram.github.io/blog/">Blog</a> &nbsp;|&nbsp;
+  <a href="https://medium.com/@sibinnediyoram">Medium</a>
+</p>
+
+<p align="center">
   <a href="https://linkedin.com/in/sibinnediyoram"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" /></a>
   <a href="https://medium.com/@sibinnediyoram"><img src="https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white" /></a>
   <a href="https://twitter.com/sibinnediyoram"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white" /></a>
