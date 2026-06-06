@@ -18,7 +18,6 @@
   <a href="https://linkedin.com/in/sibinnediyoram"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" /></a>
   <a href="https://medium.com/@sibinnediyoram"><img src="https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white" /></a>
   <a href="https://twitter.com/sibinnediyoram"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white" /></a>
-  <a href="https://www.youtube.com/@CloudnLoud"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white" /></a>
   <a href="mailto:sibinnediyoram@gmail.com"><img src="https://img.shields.io/badge/Gmail-%23D14836.svg?logo=Gmail&logoColor=white" /></a>
 </p>
 
@@ -68,11 +67,11 @@ I'm active in the tech community — speaking at meetups, hosting webinars, and 
 
 | Article | Date |
 |---|---|
-| [Zero-Touch ECR: Automating Centralized Image, Helm & Cache Management with Terraform](https://medium.com/@sibinnediyoram/zero-touch-ecr-automating-centralized-image-helm-and-cache-management-with-terraform-8f0e4c5decf7) | Apr 2025 |
-| [From OLTP to Data Lake: Zero-Downtime CDC from RDS Postgres to S3](https://medium.com/@sibinnediyoram/from-oltp-to-data-lake-zero-downtime-cdc-from-rds-postgres-to-s3-with-parquet-format-17c7cd5fded5) | Mar 2025 |
-| [Building a Secure Multi-Account Secrets Backup System on AWS](https://medium.com/@sibinnediyoram/building-a-secure-multi-account-secrets-backup-system-on-aws-0bccc4479c7e) | Mar 2025 |
-| [EKS Terraform Module Upgrade from 17.0.x to 21.0.x](https://medium.com/@sibinnediyoram/eks-terraform-module-upgrade-from-17-0-x-to-21-0-x-5b265b1d9fd8) | Mar 2025 |
-| [AWS AMI Update: AL2 to AL2023](https://medium.com/@sibinnediyoram/aws-ami-update-al2-to-al2023-aaf7412f88ee) | Mar 2025 |
+| [Zero-Touch ECR: Automating Centralized Image, Helm & Cache Management with Terraform](https://medium.com/@sibinnediyoram/zero-touch-ecr-automating-centralized-image-helm-and-cache-management-with-terraform-8f0e4c5decf7) | Apr 2026 |
+| [From OLTP to Data Lake: Zero-Downtime CDC from RDS Postgres to S3](https://medium.com/@sibinnediyoram/from-oltp-to-data-lake-zero-downtime-cdc-from-rds-postgres-to-s3-with-parquet-format-17c7cd5fded5) | Mar 2026 |
+| [Building a Secure Multi-Account Secrets Backup System on AWS](https://medium.com/@sibinnediyoram/building-a-secure-multi-account-secrets-backup-system-on-aws-0bccc4479c7e) | Mar 2026 |
+| [EKS Terraform Module Upgrade from 17.0.x to 21.0.x](https://medium.com/@sibinnediyoram/eks-terraform-module-upgrade-from-17-0-x-to-21-0-x-5b265b1d9fd8) | Mar 2026 |
+| [AWS AMI Update: AL2 to AL2023](https://medium.com/@sibinnediyoram/aws-ami-update-al2-to-al2023-aaf7412f88ee) | Mar 2026 |
 
 → [All articles on Medium](https://medium.com/@sibinnediyoram)
 
